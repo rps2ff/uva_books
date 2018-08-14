@@ -21,20 +21,8 @@ public class PostDAO {
 		
 		Session currentSession = sessionFactory.getCurrentSession();
 		
-		/*Post oldPost = this.getPost(thePost.getBook_id());
-		System.out.println(thePost.getBook_id());
-		System.out.println(oldPost == null); 
-		oldPost.setAuthor(thePost.getAuthor());
-		oldPost.setBook_isbn(thePost.getBook_isbn()); 
-		oldPost.setCourse_code(thePost.getCourse_code());
-		oldPost.setCourse_number(thePost.getCourse_number());
-		oldPost.setDepartment(thePost.getDepartment());
-		oldPost.setPrice(thePost.getPrice());
-		oldPost.setProfessor(thePost.getProfessor());
-		oldPost.setTitle(thePost.getTitle());*/
 		currentSession.saveOrUpdate(thePost);
 		
-		//currentSession.saveOrUpdate(thePost);
 		
 		
 		
